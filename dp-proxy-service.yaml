@@ -12,8 +12,8 @@ spring:
             allowedMethods: "*"
 
       routes:
-        - id: dive-planner-api
-          uri: lb://DIVE-PLANNER-API
+        - id: dp-api-service
+          uri: lb://DP-API-SERVICE
           predicates:
             - Path=/**
           filters:
