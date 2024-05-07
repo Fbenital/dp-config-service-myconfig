@@ -6,4 +6,17 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://dp-discovery-service:8761/eureka/
+
+#logging:
+#  level:
+#    root: INFO
+#    org.springframework.web: DEBUG
+#    org.springframework.security: INFO
+#    org.springframework.data: INFO
+#
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,refresh

@@ -21,3 +21,16 @@ spring:
 
       default-filters:
         - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_FIRST
+
+#logging:
+#  level:
+#    root: INFO
+#    org.springframework.web: DEBUG
+#    org.springframework.security: INFO
+#    org.springframework.data: INFO
+#
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: health,info,refresh
