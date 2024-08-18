@@ -1,31 +1,12 @@
-spring:
-  main:
-    allow-circular-references: true
-    datasource:
-      url: jdbc:postgresql://localhost:5432/diveplanner
-      username: diveplanner
-      password: 06a2b74ff77bece27826551d8ca1fab1452dfe9c16f2afa862808d593c856cc0
-      driver-class-name: org.postgresql.Driver
-    jpa:
-      #    database-platform: org.hibernate.dialect.PostgreSQLDialect
-      #    show-sql: true
-      properties:
-        hibernate:
-      #        format_sql: true
-      #        dialect: org.hibernate.dialect.PostgreSQLDialect
-      hibernate:
-        ddl-auto: update
-      open-in-view: true
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.springframework.security: INFO
+    org.springframework.data: INFO
 
-  logging:
-    level:
-      root: INFO
-      org.springframework.web: DEBUG
-      org.springframework.security: INFO
-      org.springframework.data: INFO
-
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: health,info,refresh
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,refresh
