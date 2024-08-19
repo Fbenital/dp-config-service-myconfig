@@ -8,13 +8,15 @@ server:
 spring:
   cloud:
     gateway:
-      globalcors:
-        add-to-simple-url-handler-mapping: true
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "*"
-            allowedHeaders: "*"
-            allowedMethods: "*"
+      default-filters:
+        - TokenRelay=
+#      globalcors:
+#        add-to-simple-url-handler-mapping: true
+#        corsConfigurations:
+#          '[/**]':
+#            allowedOrigins: "*"
+#            allowedHeaders: "*"
+#            allowedMethods: "*"
 
       routes:
         - id: dp-api-service
@@ -23,9 +25,6 @@ spring:
             - Path=/**
           filters:
             - StripPrefix=0
-
-      default-filters:
-        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_FIRST
 
   security:
     oauth2:
