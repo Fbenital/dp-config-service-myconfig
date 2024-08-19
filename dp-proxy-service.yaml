@@ -20,7 +20,7 @@ spring:
         - id: dp-api-service
           uri: lb://DP-API-SERVICE
           predicates:
-            - Path=/**
+            - Path=/api/**
           filters:
             - StripPrefix=0
 
