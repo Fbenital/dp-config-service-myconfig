@@ -31,20 +31,20 @@ spring:
 
   security:
     oauth2:
-      resourceserver:
-        jwt:
-          jwk-set-uri: http://localhost:8000/realms/demo/protocol/openid-connect/certs
-        client:
-          provider:
-            keycloak:
-              issuer-uri: http://localhost:8000/realms/demo
-          registration:
-            spring-with-test-scope:
-              provider: keycloak
-              client-id: spring-with-test-scope
-              client-secret: IhR232noAqHOVK5lDSyfqN2nVnkOyCY1
-              authorization-grant-type: authorization_code
-              scope: openid
+#      resourceserver:
+      jwt:
+        jwk-set-uri: http://localhost:8000/realms/demo/protocol/openid-connect/certs
+      client:
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8000/realms/demo
+        registration:
+          spring-with-test-scope:
+            provider: keycloak
+            client-id: spring-with-test-scope
+            client-secret: IhR232noAqHOVK5lDSyfqN2nVnkOyCY1
+            authorization-grant-type: authorization_code
+            scope: openid
 
 #logging:
 #  level:
