@@ -42,9 +42,9 @@ spring:
             client-secret: IhR232noAqHOVK5lDSyfqN2nVnkOyCY1
             authorization-grant-type: authorization_code
             scope: openid
-
-      jwt:
-        jwk-set-uri: http://localhost:8000/realms/demo/protocol/openid-connect/certs
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8000/realms/demo/protocol/openid-connect/certs
 
 #logging:
 #  level:
