@@ -23,9 +23,23 @@ spring:
             - Path=/**
           filters:
             - StripPrefix=0
+            - RemoveRequestHeader=Cookie
+            - TokenRelay
 
       default-filters:
         - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_FIRST
+
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8000/realms/dive-planner-realm
+        registration:
+          gateway-client:
+            client-id: myClient
+            client-secret: njwj06DcKXQX8P9GCsQzOOOKF7P6i2wg
+            scope: openid, profile
 
 #logging:
 #  level:
