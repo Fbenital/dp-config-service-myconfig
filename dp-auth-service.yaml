@@ -14,10 +14,10 @@ spring:
             redirect-uri: "{baseUrl}/login/oauth2/code/myclient"
         provider:
           keycloak:
-            issuer-uri: http://localhost:8000/realms/myrealm
+            issuer-uri: http://localhost:8000/realms/dive-planner-realm
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8000/realms/myrealm
+          issuer-uri: http://localhost:8000/realms/dive-planner-realm
 
   datasource:
     url: jdbc:postgresql://localhost:5432/diveplanner
