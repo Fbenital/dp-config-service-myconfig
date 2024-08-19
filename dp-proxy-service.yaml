@@ -21,8 +21,8 @@ spring:
           uri: lb://DP-API-SERVICE
           predicates:
             - Path=/api/**
-          filters:
-            - StripPrefix=0
+#          filters:
+#            - StripPrefix=0
 
 #      default-filters:
 #        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_FIRST
