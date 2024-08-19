@@ -39,8 +39,8 @@ spring:
           registration:
             spring-with-test-scope:
               provider: keycloak
-              client-id: myClient
-              client-secret: njwj06DcKXQX8P9GCsQzOOOKF7P6i2wg
+              client-id: spring-with-test-scope
+              client-secret: IhR232noAqHOVK5lDSyfqN2nVnkOyCY1
               authorization-grant-type: authorization_code
               scope: openid
 
