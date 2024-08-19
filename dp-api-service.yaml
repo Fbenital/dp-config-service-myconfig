@@ -18,6 +18,11 @@ spring:
       ddl-auto: update
     open-in-view: true
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/realms/dive-planner-realm/protocol/openid-connect/certs
 logging:
   level:
     root: INFO
