@@ -31,11 +31,11 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: http://localhost:8000/realms/dive-planner-realm/protocol/openid-connect/certs
+          jwk-set-uri: http://localhost:8000/realms/demo/protocol/openid-connect/certs
         client:
           provider:
             keycloak:
-              issuer-uri: http://localhost:8000/realms/dive-planner-realm
+              issuer-uri: http://localhost:8000/realms/demo
           registration:
             spring-with-test-scope:
               provider: keycloak
