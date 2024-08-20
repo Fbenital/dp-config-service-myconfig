@@ -38,8 +38,8 @@ spring:
         registration:
           spring-with-test-scope:
             provider: keycloak
-            client-id: spring-with-test-scope
-            client-secret: IhR232noAqHOVK5lDSyfqN2nVnkOyCY1
+            client-id: dp-api
+            client-secret: d8pYHgc2W2KPqwvBvOiS7zv2yxhoh68q
             authorization-grant-type: authorization_code
             scope: openid
       resourceserver:
