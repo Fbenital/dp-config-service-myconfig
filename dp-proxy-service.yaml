@@ -34,7 +34,7 @@ spring:
       client:
         provider:
           keycloak:
-            issuer-uri: http://localhost:8000/realms/demo
+            issuer-uri: http://localhost:8000/realms/dive-planner
         registration:
           spring-with-test-scope:
             provider: keycloak
@@ -44,7 +44,7 @@ spring:
             scope: openid
       resourceserver:
         jwt:
-          jwk-set-uri: http://localhost:8000/realms/demo/protocol/openid-connect/certs
+          jwk-set-uri: http://localhost:8000/realms/dive-planner/protocol/openid-connect/certs
 
 #logging:
 #  level:
