@@ -53,11 +53,9 @@ logging:
 
 management:
   endpoints:
-    prometheus:
-      enabled: true
     web:
       exposure:
-        include: "*"
+        include: "*", prometheus
     health:
       show:
         details: always
