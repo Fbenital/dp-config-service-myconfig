@@ -30,8 +30,9 @@ logging:
 
 management:
   endpoints:
-    shutdown:
-      enabled: true
     web:
       exposure:
         include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
