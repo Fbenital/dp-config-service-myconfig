@@ -35,13 +35,15 @@ spring:
       ddl-auto: update
     open-in-view: true
 
-logging:
-  level:
-    org.springframework.web: DEBUG
-    org.springframework.data: DEBUG
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+#logging:
+#  level:
+#    org.springframework.web: DEBUG
+#    org.springframework.data: DEBUG
+#
+#management:
+#  endpoints:
+#    shutdown:
+#      enabled: true
+#    web:
+#      exposure:
+#        include: "*"
