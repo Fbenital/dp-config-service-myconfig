@@ -8,16 +8,16 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
-#logging:
-#  level:
-#    org.springframework.web: DEBUG
-#    org.springframework.data: DEBUG
-#    org.springframework.cloud.netflix.eureka: DEBUG
-#
-#management:
-#  endpoints:
-#    shutdown:
-#      enabled: true
-#    web:
-#      exposure:
-#        include: "*"
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.data: DEBUG
+    org.springframework.cloud.netflix.eureka: DEBUG
+
+management:
+  endpoints:
+    shutdown:
+      enabled: true
+    web:
+      exposure:
+        include: "*"

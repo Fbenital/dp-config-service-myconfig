@@ -46,15 +46,15 @@ spring:
 #        jwt:
 #          jwk-set-uri: http://localhost:8000/realms/dive-planner/protocol/openid-connect/certs
 
-#logging:
-#  level:
-#    org.springframework.web: DEBUG
-#    org.springframework.data: DEBUG
-#
-#management:
-#  endpoints:
-#    shutdown:
-#      enabled: true
-#    web:
-#      exposure:
-#        include: "*"
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.data: DEBUG
+
+management:
+  endpoints:
+    shutdown:
+      enabled: true
+    web:
+      exposure:
+        include: "*"

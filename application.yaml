@@ -1,13 +1,1 @@
-global:
-  logging:
-    level:
-      org.springframework.web: DEBUG
-      org.springframework.data: DEBUG
-
-  management:
-    endpoints:
-      shutdown:
-        enabled: true
-      web:
-        exposure:
-          include: "*"
+global: 'xxxxxx'
