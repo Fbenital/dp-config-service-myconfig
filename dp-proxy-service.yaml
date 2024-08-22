@@ -29,22 +29,22 @@ spring:
 #      default-filters:
 #        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_FIRST
 
-  security:
-    oauth2:
-      client:
-        provider:
-          keycloak:
-            issuer-uri: http://localhost:8000/realms/dive-planner
-        registration:
-          spring-with-test-scope:
-            provider: keycloak
-            client-id: dp-api
-            client-secret: d8pYHgc2W2KPqwvBvOiS7zv2yxhoh68q
-            authorization-grant-type: authorization_code
-            scope: openid
-      resourceserver:
-        jwt:
-          jwk-set-uri: http://localhost:8000/realms/dive-planner/protocol/openid-connect/certs
+#  security:
+#    oauth2:
+#      client:
+#        provider:
+#          keycloak:
+#            issuer-uri: http://localhost:8000/realms/dive-planner
+#        registration:
+#          spring-with-test-scope:
+#            provider: keycloak
+#            client-id: dp-api
+#            client-secret: d8pYHgc2W2KPqwvBvOiS7zv2yxhoh68q
+#            authorization-grant-type: authorization_code
+#            scope: openid
+#      resourceserver:
+#        jwt:
+#          jwk-set-uri: http://localhost:8000/realms/dive-planner/protocol/openid-connect/certs
 
 logging:
   level:

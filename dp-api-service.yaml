@@ -18,11 +18,11 @@ spring:
       ddl-auto: update
     open-in-view: true
 
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          jwk-set-uri: http://localhost:8000/realms/dive-planner/protocol/openid-connect/certs
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          jwk-set-uri: http://localhost:8000/realms/dive-planner/protocol/openid-connect/certs
 logging:
   level:
     org.springframework.web: DEBUG
