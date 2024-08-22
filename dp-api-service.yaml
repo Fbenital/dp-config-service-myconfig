@@ -25,13 +25,14 @@ spring:
           jwk-set-uri: http://localhost:8000/realms/dive-planner/protocol/openid-connect/certs
 logging:
   level:
-    root: INFO
     org.springframework.web: DEBUG
-    org.springframework.security: INFO
-    org.springframework.data: INFO
+    org.springframework.data: DEBUG
 
 management:
   endpoints:
     web:
       exposure:
-        include: health,info,refresh
+        include: *
+    health:
+      show:
+        details: always

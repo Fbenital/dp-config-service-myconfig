@@ -10,11 +10,15 @@ eureka:
 
 logging:
   level:
-    root: INFO
+    org.springframework.web: DEBUG
+    org.springframework.data: DEBUG
     org.springframework.cloud.netflix.eureka: DEBUG
 
 management:
   endpoints:
     web:
       exposure:
-        include: health,info,refresh
+        include: *
+    health:
+      show:
+        details: always
