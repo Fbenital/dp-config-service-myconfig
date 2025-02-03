@@ -1,1 +1,25 @@
-global: 'xxxxxx'
+server:
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+    min-response-size: 1024
+spring:
+  application:
+    instance_id: ${HOSTNAME:localhost}-${server.port}-${random.value}
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        instance-id: ${spring.application.name}:${spring.application.instance_id}
+        deregister: true
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
+        security: INFO
+        data: INFO
